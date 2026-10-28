@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Annual Hackathon 2026</title>
+</head>
+<body>
+
+    <!-- This is the header section where the Event Title and Tagline is entered.  -->
+
+    <header>
+        <h1>Faculty Annual Hackathon 2026</h1>
+        <p>Innovating Solutions for Tomorrow: Code to Conquer, Create to Transform!</p>
+    </header>
+
+    <!-- This is the navigation tab section where it consist of about, schedule and registration. -->
+
+    <nav>
+            <a href="#about">About the Event</a> |
+            <a href="#schedule">Event Schedule</a> |
+            <a href="#register">Registration</a>
+    </nav>
+
+    <main>
+
+        <!-- This Section 1 is the introduction part of the event. This part is also about the speaker and featured activities -->
+
+        <section id="about">
+            <h2>About the Event</h2>
+            <p>Welcome to the Annual Faculty Hackathon! This full-day intensive event brings together students across all computing disciplines to solve real-world problems through collaborative design, teamwork, and software innovation.</p>
+
+            <article>
+                <h3>Featured Speaker: Dr. Abdul Khaleed</h3>
+                <p>Dr. Abdul Khaleed is an industry solutions architect and AI researcher. He will deliver the morning keynote address covering modern decentralized systems, enterprise application design, and real-time data processing.</p>
+            </article>
+
+            <article>
+                <h3>Featured Activity: Rapid Prototyping Sprint</h3>
+                <p>Teams will have four hours to brainstorm, wireframe, and build a functioning prototype around an announced problem statement. Dedicated faculty mentors and technical advisors will provide continuous on-site guidance.</p>
+            </article>
+        </section>
+
+        <!-- This Section 2 is the Event plannig table.  -->
+
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <p>Check the timetable below for all planned activities, venues, and session coordinators.</p>
+            
+            <table border="1">
+                <caption><strong>Hackathon 2026 Program Schedule</strong></caption>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Venue</th>
+                        <th>Person in Charge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:30 AM - 09:30 AM</td>
+                        <td>Participant Registration &amp; Morning Refreshments</td>
+                        <td>Main Foyer</td>
+                        <td>Registration Team</td>
+                    </tr>
+                    <tr>
+                        <td>09:30 AM - 11:00 AM</td>
+                        <td>Opening Ceremony &amp; Keynote Address</td>
+                        <td rowspan="2">Auditorium Hall</td>
+                        <td>Dr. Shah Rukh Khan</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM - 01:00 PM</td>
+                        <td>Coding Sprint: Round 1 (Architecture &amp; Design)</td>
+                        <td>Dr. Siti Sarah</td>
+                    </tr>
+                    <tr>
+                        <td>01:00 PM - 02:00 PM</td>
+                        <td colspan="3">Lunch Break &amp; Networking Session</td>
+                    </tr>
+                    <tr>
+                        <td>02:00 PM - 04:30 PM</td>
+                        <td>Coding Sprint: Round 2 (Implementation &amp; Testing)</td>
+                        <td>Lab Complex 3</td>
+                        <td>Mentors & Panel</td>
+                    </tr>
+                    <tr>
+                        <td>04:30 PM - 05:30 PM</td>
+                        <td>Project Pitching &amp; Solution Demonstrations</td>
+                        <td>Auditorium Hall</td>
+                        <td>Judging Committee</td>
+                    </tr>
+                    <tr>
+                        <td>05:30 PM - 06:30 PM</td>
+                        <td>Award Presentation &amp; Closing Ceremony</td>
+                        <td>Auditorium Hall</td>
+                        <td>Event Director</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 3 consist of registration form of the event. It asks for your full name,
+             matrics number and also the student email address.                            -->
+
+        <section id="register">
+            <h2>Registration</h2>
+            <p>Please complete and submit the form below to register for your participation passes.</p>
+            
+            <form action="register.html" method="post">
+                <p>
+                    <label for="fullName">Full Name:</label><br>
+                    <input type="text" id="fullName" name="fullName" required>
+                </p>
+
+                <p>
+                    <label for="matricNo">Matrics Number:</label><br>
+                    <input type="text" id="matricNo" name="matricNo" required>
+                </p>
+
+                <p>
+                    <label for="email">Student E-mail Address:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <strong>Year of Study:</strong><br>
+                    <input type="radio" id="year1" name="yearOfStudy" value="Year 1" required>
+                    <label for="year1">Year 1</label><br>
+                    <input type="radio" id="year2" name="yearOfStudy" value="Year 2">
+                    <label for="year2">Year 2</label><br>
+                    <input type="radio" id="year3" name="yearOfStudy" value="Year 3">
+                    <label for="year3">Year 3</label><br>
+                    <input type="radio" id="year4" name="yearOfStudy" value="Year 4">
+                    <label for="year4">Year 4</label>
+                </p>
+
+                <p>
+                    <strong>Sessions You Wish to Attend:</strong><br>
+                    <input type="checkbox" id="sessionKeynote" name="sessions" value="Keynote">
+                    <label for="sessionKeynote">Keynote Speech &amp; Opening Ceremony</label><br>
+                    <input type="checkbox" id="sessionSprint" name="sessions" value="Sprint">
+                    <label for="sessionSprint">Coding Sprint (Rounds 1 &amp; 2)</label><br>
+                    <input type="checkbox" id="sessionPitching" name="sessions" value="Pitching">
+                    <label for="sessionPitching">Project Pitching &amp; Demonstrations</label><br>
+                    <input type="checkbox" id="sessionClosing" name="sessions" value="Closing">
+                    <label for="sessionClosing">Awards Presentation &amp; Closing</label>
+                </p>
+
+                <p>
+                    <label for="programme">Programme / Faculty:</label><br>
+                    <select id="programme" name="programme" required>
+                        <option value="">-- Please Select --</option>
+                        <option value="CS">Bachelor of Computer Science</option>
+                        <option value="SE">Bachelor of Software Engineering</option>
+                        <option value="IT">Bachelor of Information Technology</option>
+                        <option value="IS">Bachelor of Information Systems</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="submit" value="Register">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- This is the Footer Section of the website. -->
+    <footer>
+        <p>Organised by the Faculty Science Computer & Mathematics &bull; &copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

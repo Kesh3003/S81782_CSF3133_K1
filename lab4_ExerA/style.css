@@ -1,0 +1,158 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #E0F2F1;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #004D40;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Navigation Hover */
+nav a:hover {
+    background-color: #26A69A;
+}
+
+/* Link States */
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #00c642;
+}
+
+a:active {
+    color: #bf1d1d;
+}
+
+/* ID Selectors */
+#destinations {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+#video {
+    background-color: #B2DFDB;
+    padding: 30px;
+    text-align: center;
+}
+
+#trip {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    text-decoration: overline;
+}
+
+h2 {
+    text-decoration: underline;
+    color: #00695C;
+}
+
+/* Destination Cards */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #E0F2F1;
+    padding: 20px;
+    border: 1px solid #00897B;
+    width: 220px;
+    border-radius: 10px;
+}
+
+.price {
+    color: #D84315;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+/* Video Styling */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    font-style: italic;
+    color: #004D40;
+}
+
+/* Trip Form */
+.trip-form {
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #00897B;
+    width: 80%;
+    max-width: 450px;
+    margin: auto;
+    text-align: left;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.trip-form input[type="submit"] {
+    background-color: #00796B;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    .trip-form {
+        width: 85%;
+    }
+}

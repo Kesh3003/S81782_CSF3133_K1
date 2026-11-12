@@ -1,0 +1,159 @@
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3E2723;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Navigation Hover */
+nav a:hover {
+    background-color: #A1887F;
+    color: white;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #FFF8E1;
+}
+
+/* Link States */
+a:link {
+    color: #1A5276;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+a:hover {
+    color: #E67E22;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+/* Menu Section */
+#menu {
+    background-color: #FFF3E0;
+    padding: 30px;
+    text-align: center;
+}
+
+.intro {
+    font-size: 18px;
+    background-color: #FDEBD0;
+    padding: 10px;
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid #D7CCC8;
+    padding: 15px;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Heading Styling */
+h1 {
+    text-decoration: overline;
+}
+
+h2 {
+    text-decoration: underline;
+    color: #6D4C41;
+}
+
+/* Price Styling */
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+    font-size: 18px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+
+/* Video Section */
+#video {
+    background-color: #EFEBE9;
+    padding: 30px;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Feedback Section */
+#feedback {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Feedback Form */
+.feedback-form {
+    background-color: #F5F5F5;
+    padding: 25px;
+    border: 2px solid #8D6E63;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #6F4E37;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+
+    .feedback-form {
+        width: 85%;
+    }
+}

@@ -1,0 +1,153 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef3f8;
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #002b5b, #00509d);
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #dbeafe;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #001d3d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 14px 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f59e0b;
+    color: #001d3d;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 960px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 32px;
+    margin-bottom: 28px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+article h2,
+.contact-box h2 {
+    color: #002b5b;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+article h3 {
+    color: #00509d;
+    font-size: 1.25rem;
+    margin-top: 28px;
+    margin-bottom: 14px;
+}
+
+/* Paragraph Alignment and Spacing */
+article p {
+    text-align: justify;
+    margin-bottom: 16px;
+    color: #334155;
+}
+
+.contact-box p {
+    margin-bottom: 8px;
+    color: #334155;
+}
+
+.contact-box a {
+    color: #00509d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 0.95rem;
+}
+
+thead {
+    background-color: #002b5b;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:hover {
+    background-color: #e0f2fe;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #dbeafe;
+    color: #1e293b;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 1px solid #bfdbfe;
+}

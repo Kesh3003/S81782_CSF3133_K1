@@ -1,0 +1,147 @@
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FBF7F0;
+    color: #2C2C2C;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header with Background Image */
+.festival-header {
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.festival-header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3rem;
+    margin: 0 0 10px;
+}
+
+.festival-header p {
+    margin: 0;
+}
+
+/* Horizontal Navigation Bar */
+.navigation {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #2C2C2C;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: #111;
+}
+
+.navigation li a.active {
+    background-color: #E67E22;
+}
+
+/* Content Section */
+.content-section {
+    width: 90%;
+    max-width: 980px;
+    margin: 28px auto;
+}
+
+.content-section p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Styled Table */
+#food-menu {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 15px 0 30px;
+    background-color: white;
+}
+
+#food-menu th,
+#food-menu td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#food-menu th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+}
+
+#food-menu tbody tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+#food-menu tbody tr:hover {
+    background-color: #FDEBD0;
+}
+
+#food-menu .price {
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    background-color: #EFE6D8;
+    color: #2C2C2C;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .festival-header {
+        padding: 55px 15px;
+    }
+
+    .festival-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .navigation li {
+        float: none;
+        display: inline-block;
+    }
+
+    .navigation {
+        text-align: center;
+    }
+
+    #food-menu th,
+    #food-menu td {
+        padding: 7px 5px;
+        font-size: 0.8rem;
+    }
+}

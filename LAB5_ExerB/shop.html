@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bookstore</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="shop.css">
+
+</head>
+
+<body>
+
+    <!--
+    Errors corrected:
+    1. shop.html Line 7:
+       Changed rel="stylesheets" to rel="stylesheet".
+    2. shop.html Line 10:
+       Moved style element into the head.
+    3. shop.html Line 18:
+       Removed incorrect inline color syntax.
+    4. shop.html Line 20:
+       Changed table id="product" to id="products".
+    5. shop.css Line 2:
+       Changed Robotto to Roboto.
+    6. shop.css Line 4:
+       Changed no repeat to no-repeat.
+    7. shop.css Line 5:
+       Corrected bacground-position to background-position.
+    8. shop.css Line 18:
+        Changed display:inline to display:block.
+    9. shop.css Line 23:
+        Changed li:a:hover to li a:hover.
+    10. shop.css Line 27:
+        Changed collapsed to collapse.
+    11. shop.css Line 34:
+        Changed nth-child(2) to nth-child(even).
+    12. shop.css Line 37:
+        Changed tr:hovered to tr:hover.
+    13. shop.css Line 45:
+        Added missing semicolon.
+    -->
+
+    <!-- Header -->
+    <header class="page-header" id="home">
+
+        <h1>Campus Bookstore</h1>
+
+        <p>
+            Textbooks, stationery and more for every student.
+        </p>
+
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="store-content" id="books">
+
+            <table id="products">
+
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Price (RM)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Web Design Basics</td>
+                        <td>Textbook</td>
+                        <td class="price">45.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>A4 Notebook</td>
+                        <td>Stationery</td>
+                        <td class="price">6.50</td>
+                    </tr>
+
+                    <tr>
+                        <td>USB Drive 32GB</td>
+                        <td>Gadget</td>
+                        <td class="price">25.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Highlighter Set</td>
+                        <td>Stationery</td>
+                        <td class="price">9.90</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Campus Bookstore</p>
+    </footer>
+
+</body>
+</html>

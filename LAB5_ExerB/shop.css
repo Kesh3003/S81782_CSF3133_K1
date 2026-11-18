@@ -1,0 +1,158 @@
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #2C2C2C;
+
+    /* Background Image */
+    background-image: url("paper.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+}
+
+/* Header Style */
+.page-header {
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                      url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.page-header h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    margin: 0 0 10px;
+}
+
+/* Paragraph Style */
+.page-header p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Active Navigation */
+nav li a.active {
+    background-color: #04AA6D;
+}
+
+/* Main Content */
+.store-content {
+    width: 90%;
+    max-width: 980px;
+    margin: 30px auto;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #1B4F72;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Product Table */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Table Header */
+#products th {
+    background-color: #1B4F72;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Alternating Row Colours */
+#products tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table Hover Effect */
+#products tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Price Alignment */
+#products .price {
+    text-align: right;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 12px;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    nav li {
+        float: none;
+        display: inline-block;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    .store-content {
+        overflow-x: auto;
+    }
+
+    #products {
+        min-width: 450px;
+    }
+}

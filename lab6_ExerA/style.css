@@ -1,0 +1,130 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Header styling */
+header {
+    background-color: #164e78;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Section cards */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Input styling */
+input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 8px;
+}
+
+/* Button styling and hover effect */
+button {
+    padding: 8px 16px;
+    background-color: #1f6fa8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #12456b;
+}
+
+/* Arena layout for images */
+.arena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.player-box {
+    text-align: center;
+}
+
+/* Fixed size and thick border for choice images */
+.player-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border: 4px solid #ccc;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: white;
+}
+
+.vs-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Result text and scoreboard */
+#result {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.scoreboard {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* History table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #164e78;
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    margin-top: 20px;
+}
